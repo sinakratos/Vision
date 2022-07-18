@@ -1,7 +1,9 @@
 #include "kernel.hpp"
 #include <opencv4/opencv2/highgui.hpp>
+#include <string>
 
 Kernel::Kernel() {}
+Kernel::~Kernel() { destroyAllWindows(); }
 
 void Kernel::blurKernel() {
 
@@ -54,4 +56,35 @@ void Kernel::showBlur() {
   imshow("blur image", result);
   waitKey(0);
 }
-Kernel::~Kernel() { destroyAllWindows(); }
+
+void Kernel::makeBinaryImage(int thresholdingNumber) {
+  result = Mat(grayImage.size(), CV_8UC1);
+  for (int i = 0; i < grayImage.rows; i++)
+    for (int j = 0; j < grayImage.cols; j++)
+      if (grayImage.at<uchar>(i, j) > thresholdingNumber) {
+        result.at<uchar>(i, j) = 255;
+      } else {
+        result.at<uchar>(i, j) = 0;
+      }
+}
+void Kernel::BinaryThreshold(int thresholdingNumber) {
+  cap.open(0);
+  char check;
+  if (!cap.isOpened()) {
+    exit(0);
+  }
+  cout << thresholdingNumber << endl;
+  while (true) {
+    cap >> image;
+    cvtColor(image, grayImage, COLOR_BGR2GRAY);
+    makeBinaryImage(thresholdingNumber);
+    imshow("threshold", result);
+    check = waitKey(1);
+    if (check == 110) {
+      break;
+    } else if (check == 113) {
+      exit(0);
+    }
+  }
+  cap.release();
+}
