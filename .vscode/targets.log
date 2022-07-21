@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Thu Jul 21 17:24:40 2022
+# Make data base, printed on Fri Jul 22 00:19:39 2022
 
 # Variables
 
@@ -27,11 +28,11 @@ LC_NAME = en_US.UTF-8
 # environment
 LC_NUMERIC = en_US.UTF-8
 # environment
-VSCODE_CWD = /home/sinakratos/Desktop/vision/final
+VSCODE_CWD = /home/sinakratos
 # environment
 NVM_DIR = /home/sinakratos/.nvm
 # environment
-TERMINATOR_UUID = urn:uuid:7dabb182-1e81-4a2b-b401-6eca28fc1a4e
+TERMINATOR_UUID = urn:uuid:d3f29f2c-dd45-4f03-8749-85ec97406f3c
 # environment
 LC_ADDRESS = en_US.UTF-8
 # default
@@ -49,7 +50,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/sinakratos/Desktop/vision/final
+PWD = /home/sinakratos/Desktop/MRL/vision/final
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -67,17 +68,18 @@ VSCODE_CODE_CACHE_PATH = /home/sinakratos/.config/Code/CachedData/3b889b090b5ad5
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.66HMP1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.VPDOP1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # makefile
 MAKEFLAGS = pqrR
+ 
 # environment
 TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
 # makefile
-CURDIR := /home/sinakratos/Desktop/vision/final
+CURDIR := /home/sinakratos/Desktop/MRL/vision/final
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
@@ -103,13 +105,14 @@ SNAP_REEXEC =
 # environment
 ZSH = /home/sinakratos/.oh-my-zsh
 # environment
-VSCODE_PID = 7408
+ 
+VSCODE_PID = 4473
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/sinakratos:@/tmp/.ICE-unix/2113,unix/sinakratos:/tmp/.ICE-unix/2113
+SESSION_MANAGER = local/sinakratos:@/tmp/.ICE-unix/2178,unix/sinakratos:/tmp/.ICE-unix/2178
 # automatic
 *F = $(notdir $*)
 # environment
@@ -122,6 +125,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 <D = $(patsubst %/,%,$(dir $<))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+ 
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -147,6 +151,7 @@ MAKEFILES :=
 # environment
 LANGUAGE = en_US:en
 # environment
+ 
 LC_MONETARY = en_US.UTF-8
 # automatic
 ^F = $(notdir $^)
@@ -157,7 +162,7 @@ LC_TIME = en_US.UTF-8
 # environment
 SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 7e1f00f72ea64337ae0a910a65174ace
+INVOCATION_ID = d7c0acf3bf7842be930bcd15b7152a82
 # environment
 SNAP_REVISION = 102
 # environment
@@ -195,10 +200,11 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2522
+SYSTEMD_EXEC_PID = 2555
 # makefile (from 'Makefile', line 3)
 RM = rm
 # environment
+ 
 DISPLAY = :0
 # environment
 USER = sinakratos
@@ -213,13 +219,11 @@ SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = VPTOC9Siu924Wx8mKpLgPOQ8NqeghHl2W_CTQyCIJZdqDPuXW91a
 # environment
-MANAGERPID = 1969
+MANAGERPID = 1999
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
-NODE_TLS_REJECT_UNAUTHORIZED = 0
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3596
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3474
 # makefile (from 'Makefile', line 7)
 lIBS = $(OPENCV)
 # environment
@@ -239,7 +243,7 @@ NVM_RC_VERSION =
 # environment
 NVM_CD_FLAGS = -q
 # environment
-JOURNAL_STREAM = 8:48532
+JOURNAL_STREAM = 8:26507
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -250,6 +254,7 @@ HOME = /home/sinakratos
 QT_IM_MODULE = ibus
 # environment
 NVM_IOJS_ORG_MIRROR = https://iojs.org/dist
+ 
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
@@ -276,9 +281,9 @@ VSCODE_CLI = 1
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VTE_VERSION = 6800
- 
 # environment
 SNAP_COMMON = /var/snap/code/common
+ 
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 1)
@@ -294,17 +299,18 @@ LC_IDENTIFICATION = en_US.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=141/1024=14%, Rehash=0, Collisions=7/178=4%
+# Load=140/1024=14%, Rehash=0, Collisions=7/177=4%
 
+ 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 66314, inode 1329301): 16 files, no impossibilities.
+# . (device 66314, inode 1329301): 15 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -315,38 +321,45 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
-# Not a target:
-threshold.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-kernel.o: kernel.cpp
+ 
+threshold.o: threshold.cpp
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'kernel'
-#  Last modified 2022-07-20 17:08:39.533243844
+#  Implicit/static pattern stem: 'threshold'
+#  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
-# @ := kernel.o
+# @ := threshold.o
 # automatic
-# * := kernel
+# * := threshold
 # automatic
-# < := kernel.cpp
+# < := threshold.cpp
 # automatic
-# + := kernel.cpp
+# + := threshold.cpp
 # automatic
 # % := 
 # automatic
-# ^ := kernel.cpp
+# ^ := threshold.cpp
+ 
 # automatic
-# ? := kernel.cpp
+# ? := threshold.cpp
 # automatic
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=3/17=18%
 #  recipe to execute (from 'Makefile', line 15):
 	$(CC) $(CFLAGS) -c -o $@ $< $(lIBS)
+
+kernel.o: kernel.cpp
+#  Implicit rule search has been done.
+ 
+#  Implicit/static pattern stem: 'kernel'
+#  Last modified 2022-07-22 00:19:25.012580213
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 15):
+	$(CC) $(CFLAGS) -c -o $@ $< $(lIBS)
+ 
 
 # Not a target:
 Makefile:
@@ -358,6 +371,7 @@ Makefile:
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 21):
 	rm *.o main
@@ -372,6 +386,7 @@ all: main run
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
@@ -384,28 +399,39 @@ run:
 #  recipe to execute (from 'Makefile', line 18):
 	./main
 	
+ 
 
 # Not a target:
 main.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-18 19:39:12.978439614
+#  Last modified 2022-07-21 18:23:38.359671603
 #  File has been updated.
 #  Successfully updated.
 
 main: main.o kernel.o threshold.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-20 17:08:39.793249224
+#  File does not exist.
 #  File has been updated.
+ 
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/7=0%
 #  recipe to execute (from 'Makefile', line 12):
 	$(CC) $(CFLAGS) -o main main.o kernel.o threshold.o $(lIBS)
 
+# Not a target:
+threshold.cpp:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-21 17:54:46.974853459
+#  File has been updated.
+#  Successfully updated.
+
 main.o: main.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main'
-#  Last modified 2022-07-20 14:44:46.355910897
+#  Last modified 2022-07-22 00:19:23.948948094
+ 
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 15):
@@ -414,24 +440,26 @@ main.o: main.cpp
 # Not a target:
 kernel.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-21 17:24:04.912533674
+ 
+#  Last modified 2022-07-21 18:23:22.256162442
 #  File has been updated.
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/36=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/40=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 232 B / avg = 8 B
-# current buf: size = 8162 B / used = 232 B / count = 27 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 242 B / avg = 8 B
+# current buf: size = 8162 B / used = 242 B / count = 28 / avg = 8 B
 
-# strcache performance: lookups = 46 / hit rate = 41%
+# strcache performance: lookups = 48 / hit rate = 41%
+ 
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/46=0%
-# Finished Make data base on Thu Jul 21 17:24:40 2022
+# Load=28/8192=0%, Rehash=0, Collisions=0/48=0%
+# Finished Make data base on Fri Jul 22 00:19:39 2022
 
  

@@ -4,7 +4,6 @@
 
 class Kernel {
 private:
-  VideoCapture cap;
   Mat image;
   Mat Blur;
   Mat result;

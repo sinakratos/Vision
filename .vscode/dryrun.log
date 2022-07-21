@@ -1,8 +1,7 @@
 make --dry-run --keep-going --print-directory
-make: Entering directory '/home/sinakratos/Desktop/vision/final'
-g++ -g -Wall -c -o kernel.o kernel.cpp `pkg-config --cflags --libs opencv4`
+make: Entering directory '/home/sinakratos/Desktop/MRL/vision/final'
 g++ -g -Wall -c -o threshold.o threshold.cpp `pkg-config --cflags --libs opencv4`
 g++ -g -Wall -o main main.o kernel.o threshold.o `pkg-config --cflags --libs opencv4`
 ./main
-make: Leaving directory '/home/sinakratos/Desktop/vision/final'
+make: Leaving directory '/home/sinakratos/Desktop/MRL/vision/final'
  

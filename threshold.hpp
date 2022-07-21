@@ -8,6 +8,7 @@ private:
   Mat Blur;
   Mat result;
   Mat grayImage;
+  VideoCapture cap;
 
 public:
   Threshold();
