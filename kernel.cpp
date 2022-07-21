@@ -6,7 +6,6 @@ Kernel::Kernel() {}
 Kernel::~Kernel() { destroyAllWindows(); }
 
 void Kernel::blurKernel() {
-
   image = imread("test.png", 0);
   Blur = (Mat_<float>(3, 3) << 0.0625, 0.125, 0.0625, 0.125, 0.25, 0.125,
           0.0625, 0.125, 0.0625);
@@ -19,6 +18,7 @@ void Kernel::blurKernel() {
     cerr << "Error reading image" << endl;
     return;
   }
+
   float sum = 0.0;
   int x, y;
   for (int i = 0; i < image.rows; i++) {
