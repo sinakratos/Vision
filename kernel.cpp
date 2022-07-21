@@ -16,10 +16,11 @@ void Kernel::blurKernel() {
   imshow("blur image", result);
 
   if (!image.data) {
-    cerr << "Error reading robot image" << endl;
-    exit(0);
+    cerr << "Error reading image" << endl;
+    return;
   }
-  float sum = 0.0, x, y;
+  float sum = 0.0;
+  int x, y;
   for (int i = 0; i < image.rows; i++) {
     for (int j = 0; j < image.cols; j++) {
       sum = 0.0;
@@ -55,36 +56,4 @@ void Kernel::showBlur() {
   imshow("Original image", image);
   imshow("blur image", result);
   waitKey(0);
-}
-
-void Kernel::makeBinaryImage(int thresholdingNumber) {
-  result = Mat(grayImage.size(), CV_8UC1);
-  for (int i = 0; i < grayImage.rows; i++)
-    for (int j = 0; j < grayImage.cols; j++)
-      if (grayImage.at<uchar>(i, j) > thresholdingNumber) {
-        result.at<uchar>(i, j) = 255;
-      } else {
-        result.at<uchar>(i, j) = 0;
-      }
-}
-void Kernel::BinaryThreshold(int thresholdingNumber) {
-  cap.open(0);
-  char check;
-  if (!cap.isOpened()) {
-    exit(0);
-  }
-  cout << thresholdingNumber << endl;
-  while (true) {
-    cap >> image;
-    cvtColor(image, grayImage, COLOR_BGR2GRAY);
-    makeBinaryImage(thresholdingNumber);
-    imshow("threshold", result);
-    check = waitKey(1);
-    if (check == 110) {
-      break;
-    } else if (check == 113) {
-      exit(0);
-    }
-  }
-  cap.release();
 }

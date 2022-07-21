@@ -8,8 +8,8 @@ lIBS = $(OPENCV)
 
 all: main run
 
-main: main.o kernel.o 
-	$(CC) $(CFLAGS) -o main main.o kernel.o  $(lIBS)
+main: main.o kernel.o threshold.o
+	$(CC) $(CFLAGS) -o main main.o kernel.o threshold.o $(lIBS)
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c -o $@ $< $(lIBS)
