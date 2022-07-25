@@ -14,4 +14,4 @@ public:
   void blurKernel();
   void showBlur();
 };
-#endif // KERNEL_HPP
+#endif // KERNEL_HPP‍

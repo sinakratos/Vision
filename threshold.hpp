@@ -5,7 +5,6 @@
 class Threshold {
 private:
   Mat image;
-  Mat Blur;
   Mat result;
   Mat grayImage;
   VideoCapture cap;
