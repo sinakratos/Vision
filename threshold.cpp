@@ -20,8 +20,8 @@ void Threshold::BinaryThreshold() {
   if (!cap.isOpened()) {
     return;
   }
-  cv::namedWindow("Binary", WINDOW_AUTOSIZE);
-  cv::createTrackbar("Threshold number", "Binary", &thresholdingNumber, 255);
+  namedWindow("Binary", WINDOW_AUTOSIZE);
+  createTrackbar("Threshold number", "Binary", &thresholdingNumber, 255);
   while (true) {
     cap >> image;
     cvtColor(image, grayImage, COLOR_BGR2GRAY);
